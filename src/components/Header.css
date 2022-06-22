@@ -10,7 +10,7 @@ header {
     margin-top: 5rem;
 }
 
-/*==================  CTA  ====================*/
+/* ==================  CTA  ==================== */
 
 .cta {
     margin-top: 2.5rem;
@@ -19,7 +19,7 @@ header {
     justify-content: center;
 }
 
-/*=================  HEADER SOCIALS  ========================*/
+/* =================  HEADER SOCIALS  ===================== */
 
 .header__socials  {
     display: flex;
@@ -28,7 +28,7 @@ header {
     gap: 1.5rem;
     position: absolute;
     left: 4%;
-    bottom: 10rem;
+    bottom: 2rem;
 }
 
 .header__socials::after {
@@ -38,51 +38,51 @@ header {
     background: var(--color-primary);
 } 
 
-/*=================  HEADER SOCIALS  ======================*/
+/* =================  ME  ====================== */
 
 .me {
     background: linear-gradient(var(--color-primary), transparent);
-    width: 30rem;
-    height: 43rem;
+    width: 22rem;
+    height: 30rem;
     position:relative;    
-    left: calc(50% - 15rem);
+    left: calc(50% - 11rem);
     margin-top: 4rem;
-    border-radius: 15rem 15rem 0 0;
+    border-radius: 12rem 12rem 0 0;
     overflow: hidden;
-    padding: 2rem .5rem .5rem .5rem;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
 }
 
 /*=================== SCROLL DOWN  ========================*/
 
 .scroll__down {
     position: absolute;
-    right: 1.3%;
-    bottom: 10rem;
+    right: calc(4% - 2.5rem);
+    bottom: 5rem;
     transform: rotate(90deg);
     font-weight: 300;
     font-size: 1rem;
 }
 
-/*===================== MEDIA QUERIES (MEDIUM DEVICES) =================*/
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) ================ */
 
 @media screen and ( max-width:1024px) {
-    .container {
-        background: rgb(169, 8, 164);
-    }
+  
     header {
         height: 68vh;
     }     
 }
 
-/*===================== MEDIA QUERIES (SMALL DEVICES) =================*/
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
 
 
 @media screen and ( max-width:600px) {
-    .container {
-        background: rgb(213, 153, 2);
-    }
+ 
     header {
         height: 100vh;
-    }     
+    }   
+    .header__socials,
+    .scroll__down {
+        display: none;
+    }  
 }
 
