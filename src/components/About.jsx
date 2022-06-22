@@ -3,7 +3,7 @@ import "./About.css";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { MdOutlineFolderShared } from "react-icons/md";
-import ME from "../assets/person1.png";
+import ME from "../assets/me-about.jpg";
 
 const About = () => {
   return (
@@ -28,20 +28,25 @@ const About = () => {
 
             <article className="about__card">
               <FiUsers className="about__icon" />
-              <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <h5>Endorsements</h5>
+              <small>The crowd favorite</small>
             </article>
 
             <article className="about__card">
               <MdOutlineFolderShared className="about__icon" />
-              <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <h5>Projects</h5>
+              <small>What I'm proud of</small>
             </article>
-            <p>
-              I am a Full Stack Web Developer who loves building interactive
-              user-friendly websites and apps with an eye on animated content.
-            </p>
           </div>
+
+          <p>
+            I am a Full Stack Web Developer who loves building interactive
+            user-friendly websites and apps with an eye on animated content.
+          </p>
+
+          <a href="#contact" className="btn tbn-primary">
+            Let's talk!
+          </a>
         </div>
       </div>
     </section>
