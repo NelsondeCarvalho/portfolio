@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 35% 50%;
     gap: 15%;
+    margin-top: 7%;
 }
 
 .about__me {
@@ -73,6 +74,7 @@
 }
 
 
+
 /*======================= MEDIA QUERIES (MEDIUM DEVICES) =================*/
 
 @media screen and ( max-width:1024px) {
@@ -100,17 +102,25 @@
    .about__me {
     width: 65%;
     margin: 0 auto 3rem;
-   }
+  }
 
   .about__cards {
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin: auto;
+    gap: 1rem; 
   }
   .about__content {
-    text-align: center;
+    text-align: center; 
+    padding-right:1rem;
   }
   .about__content p {
     margin: 1.5rem 0;
+    
+  }
+  .about__container {
+    margin:auto;
+    background-color: rgb(43, 226, 104);
+    align-items: center;
   }
 }
+
+

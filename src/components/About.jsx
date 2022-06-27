@@ -3,7 +3,7 @@ import "./About.css";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { MdOutlineFolderShared } from "react-icons/md";
-import ME from "../assets/me-about.jpg";
+import ME from "../assets/person1.png";
 
 const About = () => {
   return (
