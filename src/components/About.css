@@ -1,3 +1,8 @@
+#about {
+    height: 40vh;
+}
+
+
 .about__container {
     display: grid;
     grid-template-columns: 35% 50%;
@@ -48,9 +53,10 @@
 }
 
 .about__card:hover {
-    background: transparent;
+    background: var(--color-white);
     border-color: var(--color-primary-variant);
     cursor: default;
+    color: black;
 }
 
 .about__icon {
@@ -78,6 +84,7 @@
 /*======================= MEDIA QUERIES (MEDIUM DEVICES) =================*/
 
 @media screen and ( max-width:1024px) {
+  
     .about__container {
         grid-template-columns: 1fr;
         gap: 0;
@@ -113,12 +120,10 @@
     padding-right:1rem;
   }
   .about__content p {
-    margin: 1.5rem 0;
-    
+    margin: 1.5rem 0;    
   }
   .about__container {
     margin:auto;
-    background-color: rgb(43, 226, 104);
     align-items: center;
   }
 }
