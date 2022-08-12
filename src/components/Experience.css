@@ -1,3 +1,9 @@
+/*
+#experience {
+    margin-top: 50%;
+}
+*/
+
 .experience__container {
     display: grid;
     grid-template-columns: 1fr 1fr;

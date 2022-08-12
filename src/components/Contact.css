@@ -1,0 +1,28 @@
+
+#contact {
+
+   
+
+}
+
+
+.contact__container {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgb(246, 63, 63);
+}
+
+.contact__remarks {
+
+    background-color: rgb(247, 160, 46);
+    display: grid;
+    grid-template-columns: 2, 2fr;
+}
+
+.contact__form {
+
+    background-color: rgb(46, 247, 83);
+    display: grid;
+    grid-template-columns: 2, 2fr;
+}

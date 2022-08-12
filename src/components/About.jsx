@@ -3,7 +3,7 @@ import "./About.css";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { MdOutlineFolderShared } from "react-icons/md";
-import ME from "../assets/person1.png";
+import ME from "../assets/me-about.jpg";
 
 const About = () => {
   return (
@@ -23,7 +23,7 @@ const About = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <small>2+ Years Working</small>
             </article>
 
             <article className="about__card">

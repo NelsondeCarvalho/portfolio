@@ -46,6 +46,7 @@ body {
 .container {
     width: var(--container-width-lg);
     margin: 0 auto;
+    
 }
 
 h1, h2, h3,h4, h5 {
@@ -63,7 +64,7 @@ section {
 section > h2,
 section h5 {
     text-align: center;
-    color: var(--color-light);
+    
 }
 
 section > h2 {
@@ -71,9 +72,6 @@ section > h2 {
     margin-bottom: 3rem;
 }
 
-.text-light {
-    color: var(--color-light);
-}
 
 a {
     color: var(--color-primary);

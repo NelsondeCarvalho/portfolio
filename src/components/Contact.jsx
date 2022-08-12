@@ -5,11 +5,52 @@ const Contact = () => {
   return (
     <section id="contact">
       <h3>GET IN TOUCH</h3>
-      <h1>Diz Ola!</h1>
-      <p>
-        I'm available for freelance work. Drop me a line if you fancy a chat.
-      </p>
-      <p>If you’d like to send me a message, I can be reached through various ways! If you prefer email, simply fill out the form below or send me a message directly at <a href="email">hello@nelsondecarvalho.com</a>.</p>
+      <h2>Diz Ola!</h2>
+      <div className="container contact__container">
+        <div className="contact__remarks">
+          <p>
+            I'm available for freelance work, drop me a line if you fancy a
+            chat.
+          </p>
+          <p>
+            If you’d like to send me a message, I can be reached through various
+            ways! If you prefer email, simply fill out the form below or send me
+            a message directly at <a href="email">hello@nelsondecarvalho.com</a>
+            .
+          </p>
+        </div>
+        <div className="contact__form">
+          <form className="form_content">
+            <div className="form">
+              <label htmlFor="one">Full Name: </label>
+              <input
+                required
+                type="text"
+                placeholder="Your Name"
+                className="InputClass"
+              />
+            </div>
+            <div className="form">
+              <label htmlFor="one">email: </label>
+              <input
+                required
+                type="email"
+                placeholder="someone@somedomain.something"
+                className="InputClass"
+              />
+            </div>
+            <div className="form">
+              <label htmlFor="one">Message: </label>
+              <input
+                required
+                type="text"
+                placeholder="Write your message here"
+                className="InputClass"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
   );
 };
