@@ -1,28 +1,52 @@
-
-#contact {
-
-   
-
-}
-
-
 .contact__container {
-
+    background: salmon;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    background-color: rgb(246, 63, 63);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5%;
 }
+
 
 .contact__remarks {
-
-    background-color: rgb(247, 160, 46);
-    display: grid;
-    grid-template-columns: 2, 2fr;
+    background: red;
 }
 
 .contact__form {
-
-    background-color: rgb(46, 247, 83);
-    display: grid;
-    grid-template-columns: 2, 2fr;
+    background: greenyellow;
+    width: 600px;
+    height: auto;
+    border: 5px solid rgb(255, 255, 255);
+    margin: 20px;
+    padding: 50px;
+    border-radius: 20px;
 }
+
+.form__content {
+    width: 100%;
+    color: blueviolet;
+    border: solid black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.InputClass {
+    background: rgb(242, 228, 255);
+    border: 3px solid red;
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+    margin: 2px;
+    display: grid;
+}
+
+.message__Input {
+    font-size: 30px;
+    background: rgb(242, 228, 255);
+    border: 1px solid red;
+    border-radius: 5px;
+    width: 250px;
+    height: 100px;
+    margin: 2px;
+    display: grid;
+
+    &:focus { border: 4px solid red;}
+    }

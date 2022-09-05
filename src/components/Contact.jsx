@@ -16,11 +16,11 @@ const Contact = () => {
             If you’d like to send me a message, I can be reached through various
             ways! If you prefer email, simply fill out the form below or send me
             a message directly at <a href="email">hello@nelsondecarvalho.com</a>
-            .
           </p>
         </div>
+        
         <div className="contact__form">
-          <form className="form_content">
+          <form className="form__content">
             <div className="form">
               <label htmlFor="one">Full Name: </label>
               <input
@@ -45,7 +45,7 @@ const Contact = () => {
                 required
                 type="text"
                 placeholder="Write your message here"
-                className="InputClass"
+                className="message__Input"
               />
             </div>
           </form>
