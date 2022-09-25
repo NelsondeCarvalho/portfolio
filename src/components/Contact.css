@@ -1,62 +1,138 @@
-.contact__container {
-    background: salmon;
+.contact__container {    
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5%;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 4%;
+    
 }
 
+/* ================  CONTACT REMARKS  ==================*/
+
+
+.remarks__text {    
+    background-color: #ffffff;   
+    text-align: justify;    
+    width: 100%;
+    height: 100%;
+    font-weight: 200;
+    padding: 40px;
+    border-radius: 20px;
+    color: var(--color-bg);
+    
+}
+
+/* ================  CONTACT FORM ===================*/
 
 .contact__form {
-    background: greenyellow;
-    width: 600px;
+    background: var(--color-white);
+    width: 100%;
     height: auto;
-    border: 5px solid rgb(255, 255, 255);
-    margin: 10px;
-    padding: 10px;
+    padding: 40px;
     border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
 }
 
 .form__content {
     width: 100%;
-    color: blueviolet;
-    border: solid black;
-    padding: 10px;
+    padding: 2px;
     border-radius: 20px;
 }
 
-.InputClass {
-    background: rgb(242, 228, 255);
-    border: 2px solid var(--color-primary-variant);
-    border-radius: 5px;
-    width: 250px;
-    height: 40px;
-    margin: 2px;
-    display: grid;
+.form__div {
+    position: relative;
+    height: 50px;
+    margin-bottom: 1.5rem;
 }
 
-.message__Input {
-    background: whitesmoke;
-    border: 2px solid var(--color-primary-variant);
-    border-radius: 0.5rem;
-    width: 100%;  
-    height: 40px; 
+.form__input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 2px solid rgb(225, 227, 233);    
+    border-radius: .5rem;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    background: none;
+    z-index: 1;
+}
+
+.form__label {
+    position: absolute;
+    left: 1rem;
+    top: .5rem;
+    font-size: 15px;
+    background-color: #fff;
+    color: var(--color-bg-variant);
+    transition: var(--transition);
+}
+
+.msg__input {    
+    height: 150px; 
+    outline: none;
     resize: none;
+    padding: 10px;
     }
 
+textarea::-webkit-scrollbar {
+    width: 10px;
+}
 
-/* ================  CONTACT REMARKS  ============================*/
+/* ================  INPUT FUCUS MOVE UP  ===================*/
 
-.contact__remarks {
-    background: red;
-    padding: 1.2rem;
-    border-radius: 1.2rem;
-    text-align: center;
-    border: 1px solid transparent;
+.form__input:focus+ .form__label {
+    top: -15px;
+    color: var(--color-primary);
+    border-radius: .5rem;
+    padding-right: .2rem ;
+    font-size: 15px;
+    font-weight: 400;
     transition: var(--transition);
-    margin: 5px;
+    z-index: 1;
 }
 
-.contact__remarks:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
+/* ================  INPUT FUCUS STICK UP  ===================*/
+
+/* .form__input:not(:placeholder-shown).form__input:not(:focus)+ .form__label {
+    top: -15px;
+    color: var(--color-primary);
+    border-radius: .5rem;
+    padding-right: .2rem ;
+    font-size: 15px;
+    font-weight: 400;
+    transition: var(--transition);
+} */
+
+/* ================  INPUT FUCUS ===================*/
+
+.form__input:focus {
+    border: 2px solid var(--color-primary);
 }
+
+
+/* ================  CONTACT FORM BUTTON ===============*/
+
+.form__button {
+    display: block;
+    margin-left: auto;
+    padding: .75rem 2rem;
+    margin-top: 5rem;
+    outline: none;
+    border: 2px solid var(--color-primary);
+    font-size: 18px;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.form__button:hover {
+    background: var(--color-white);
+    color: var(--color-bg);
+    border: 2px solid var(--color-primary);
+}
+
