@@ -119,7 +119,7 @@ textarea::-webkit-scrollbar {
 
 .form__button {
     display: block;
-    margin-left: auto;
+    margin: auto;
     padding: .75rem 2rem;
     margin-top: 5rem;
     outline: none;

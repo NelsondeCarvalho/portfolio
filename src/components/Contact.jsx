@@ -5,7 +5,7 @@ import "../assets/yellow-stone-alpha.png"
 const Contact = () => {
   return (
     <section id="contact">
-      <h3>GET IN TOUCH</h3>
+      <h5>GET IN TOUCH</h5>
       <h2>Diz Ola!</h2>
       <div className="container contact__container">
 
@@ -27,7 +27,7 @@ const Contact = () => {
 
 {/* =================== Reft Side ===================== */}
 
-        <div className="contact__form">
+        <div className="container contact__form">
           <form className="form__content">
             <div className="form__div">              
               <input
@@ -52,7 +52,7 @@ const Contact = () => {
               <label className="form__label">Write your thoughts here</label> 
             </div>
           </form>
-          <button className="form__button tbn-primary">Send</button>
+          <button type="submit" className="form__button tbn-primary">Send</button>
         </div>
       </div>
     </section>

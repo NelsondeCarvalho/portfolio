@@ -10,13 +10,13 @@ const Footer = () => {
           <span className="placeholder">Full Name</span>
         </label>
 
-        <label className="custom__field">
-          <input for="email" required type="email"/>
+        <label className="custom__field email__custom__field">
+          <input type="text" required />
           <span className="placeholder">Email</span>
         </label>
       
-        <label className="msg__custom__field custom__field">
-          <textarea  for="comp" required className="msg__input"/>
+        <label className="custom__field msg__custom__field">
+          <textarea type='text' required className="msg__input"/>
           <label className="placeholder">Write your thoughts here</label>
         </label>
       </div>
