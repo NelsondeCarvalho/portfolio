@@ -10,7 +10,8 @@
    font-size: 16px;
 }
 
-.foot__container::before, .foot__container::after {
+.foot__container::before,
+.foot__container::after {
    box-sizing: border-box;
 }
 
@@ -25,41 +26,41 @@
    -webkit-appearance: none;
    -ms-appearance: none;
    -moz-appearance: none;
-   appearance: none;   
+   appearance: none;
    padding: 10px;
    border-radius: 3px;
    width: 300px;
    outline: none;
    text-decoration: black;
-   font-size: 15px;   
+   font-size: 15px;
 }
 
 .custom__field .placeholder {
    position: absolute;
    left: 12px;
    top: calc(50% + 10px);
-   transform: translateY(-50%);   
+   transform: translateY(-50%);
    transition:
       top 0.3s ease,
-      color 0.3s ease ;
+      color 0.3s ease;
 }
 
-.custom__field input:valid, 
+.custom__field input:valid,
 .custom__field input:focus {
    border-color: #018deb;
    transition-delay: 0.2s;
 }
 
-.custom__field input + .placeholder {
+.custom__field input+.placeholder {
    padding: 0 5px;
    left: 8px;
 }
 
-.custom__field input:valid + .placeholder, 
-.custom__field input:focus + .placeholder {
+.custom__field input:valid+.placeholder,
+.custom__field input:focus+.placeholder {
    top: 20px;
    color: #018deb;
-   font-size: 15px;   
+   font-size: 15px;
    background: #fff;
 }
 
@@ -70,31 +71,31 @@
    -webkit-appearance: none;
    -ms-appearance: none;
    -moz-appearance: none;
-   appearance: none;   
+   appearance: none;
    padding: 10px;
    border-radius: 3px;
    width: 300px;
    outline: none;
    text-decoration: black;
-   font-size: 15px;   
+   font-size: 15px;
 }
 
-.email__custom__field input:valid, 
+.email__custom__field input:valid,
 .email__custom__field input:focus {
    border-color: #018deb;
    transition-delay: 0.2s;
 }
 
-.email__custom__field input + .placeholder {
+.email__custom__field input+.placeholder {
    padding: 0 5px;
    left: 8px;
 }
 
-.email__custom__field input:valid + .placeholder, 
-.email__custom__field input:focus + .placeholder {
+.email__custom__field input:valid+.placeholder,
+.email__custom__field input:focus+.placeholder {
    top: 20px;
    color: #018deb;
-   font-size: 15px;   
+   font-size: 15px;
    background: #fff;
 }
 
@@ -111,31 +112,30 @@
    -webkit-appearance: none;
    -ms-appearance: none;
    -moz-appearance: none;
-   appearance: none;   
+   appearance: none;
    padding: 10px;
    border-radius: 3px;
    width: 300px;
    outline: none;
    text-decoration: black;
-   font-size: 15px;   
+   font-size: 15px;
 }
 
-.custom__field textarea:valid, 
+.custom__field textarea:valid,
 .custom__field textarea:focus {
    border-color: #018deb;
    transition-delay: 0.2s;
 }
 
-.custom__field textarea + .placeholder {
+.custom__field textarea+.placeholder {
    padding: 0 5px;
    left: 8px;
 }
 
-.custom__field textarea:valid + .placeholder, 
-.custom__field textarea:focus + .placeholder {
+.custom__field textarea:valid+.placeholder,
+.custom__field textarea:focus+.placeholder {
    top: 20px;
    color: #018deb;
-   font-size: 15px;   
+   font-size: 15px;
    background: #fff;
 }
-

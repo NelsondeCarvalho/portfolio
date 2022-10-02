@@ -3,7 +3,7 @@ import "./About.css";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { MdOutlineFolderShared } from "react-icons/md";
-import ME from "../assets/me-about.jpg";
+import ME2 from "../assets/yellow-stone-alpha.png";
 
 const About = () => {
   return (
@@ -13,8 +13,8 @@ const About = () => {
 
       <div className="container about__container">
         <div className="about__me">
-          <div className="about__me-image">
-            <img src={ME} alt="About me Img" />
+          <div className="about__me__card">
+            <img src={ME2} className="About__me__Img" alt="" />
           </div>
         </div>
 

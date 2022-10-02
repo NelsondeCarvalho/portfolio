@@ -1,6 +1,8 @@
 import React from "react";
 import "./Contact.css";
 import "../assets/yellow-stone-alpha.png"
+import POSTAL from "../assets/yellow-stone-alpha.png";
+
 
 const Contact = () => {
   return (
@@ -9,50 +11,45 @@ const Contact = () => {
       <h2>Diz Ola!</h2>
       <div className="container contact__container">
 
-{/* =================== Left Side ===================== */}
-        
-<div className="contact__remarks">
-        <div className="remarks__text">
-          <p>
-            I'm available for freelance work, drop me a line if you fancy a
-            chat.
-          </p>
-          <p>
-            If you’d like to send me a message, I can be reached through various
-            ways! If you prefer email, simply fill out the form below or send me
-            a message directly at <a href="email">hello@nelsondecarvalho.com</a>
-          </p>
-          </div>
-          </div>
+        {/* =================== Left Side ===================== */}
 
-{/* =================== Reft Side ===================== */}
+        <div className="contact__remarks">
+          <div className="remarks__text">
+            <p>
+              I'm available for freelance work. Drop me a line if you fancy a
+              chat.
+            </p>
+            <br />
+            <p>
+              If you’d like to contact me, I can be reached through various
+              ways! If you prefer email, simply fill out the form or send me
+              an email directly at <a href="email">hello@nelsondecarvalho.com</a> for a faster response.
+            </p>
+          </div>
+          {/* <img src={POSTAL} alt="" /> */}
+        </div>
+
+        {/* =================== Reft Side ===================== */}
 
         <div className="container contact__form">
           <form className="form__content">
-            <div className="form__div">              
-              <input
-                required
-                type="text"
-                placeholder=" "
-                className="form__input"
-              />
-              <label className="form__label">Full Name </label>
-            </div>
-            <div className="form__div">              
-              <input
-                required
-                type="email"
-                placeholder=" "
-                className="form__input"
-              />
-              <label className="form__label">Email</label>
-            </div>
-            <div className="form__div">                
-              <textarea required className="form__input msg__input" placeholder=" "></textarea>
-              <label className="form__label">Write your thoughts here</label> 
-            </div>
+            <label className="custom__field">
+              <input type="text" required />
+              <span className="placeholder">Full Name</span>
+            </label>
+
+            <label className="custom__field email__custom__field">
+              <input type="text" required />
+              <span className="placeholder">Email</span>
+            </label>
+
+            <label className="custom__field msg__custom__field">
+              <textarea type='text' required className="msg__input" />
+              <label className="placeholder">Write your thoughts here...</label>
+            </label>
+            <button type="submit" className="form__button tbn-primary">Send</button>
           </form>
-          <button type="submit" className="form__button tbn-primary">Send</button>
+
         </div>
       </div>
     </section>

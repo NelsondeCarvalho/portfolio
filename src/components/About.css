@@ -5,31 +5,36 @@
     margin-top: 7%;
 }
 
+.About__me__Img {
+    aspect-ratio: 1/1;
+    width: 115%;
+    overflow: hidden;
+}
+
 .about__me {
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 2rem;
-    background: linear-gradient(
-        45deg,
-        transparent,
-        var(--color-primary),
-        transparent
-    );
+    background: linear-gradient(45deg,
+            transparent,
+            var(--color-primary),
+            transparent);
     display: grid;
     place-items: center;
 }
 
-.about__me-image {
+.about__me__card {
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 2rem;
     overflow: hidden;
     transform: rotate(10deg);
     transition: var(--transition);
+    background-color: rgb(247, 243, 237);
 }
 
-.about__me-image:hover {
-    transform:rotate(0);    
+.about__me__card:hover {
+    transform: rotate(0);
 }
 
 .about__cards {
@@ -76,8 +81,8 @@
 
 /*======================= MEDIA QUERIES (MEDIUM DEVICES) =================*/
 
-@media screen and ( max-width:1024px) {
-  
+@media screen and (max-width:1024px) {
+
     .about__container {
         grid-template-columns: 1fr;
         gap: 0;
@@ -89,7 +94,7 @@
         width: 50%;
         margin: 2rem auto 4rem;
     }
-    
+
     .about__content p {
         margin: 1rem 0 1.5rem;
     }
@@ -98,27 +103,28 @@
 
 /*================== MEDIA QUERIES (SMALL DEVICES) =================*/
 
-@media screen and ( max-width:600px) {
-   .about__me {
-    width: 65%;
-    margin: 0 auto 3rem;
-  }
+@media screen and (max-width:600px) {
+    .about__me {
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
 
-  .about__cards {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem; 
-  }
-  .about__content {
-    text-align: center; 
-    padding-right:1rem;
-  }
-  .about__content p {
-    margin: 1.5rem 0;    
-  }
-  .about__container {
-    margin:auto;
-    align-items: center;
-  }
+    .about__cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .about__content {
+        text-align: center;
+        padding-right: 1rem;
+    }
+
+    .about__content p {
+        margin: 1.5rem 0;
+    }
+
+    .about__container {
+        margin: auto;
+        align-items: center;
+    }
 }
-
-
