@@ -1,7 +1,5 @@
 import React from "react";
 import "./Contact.css";
-import "../assets/yellow-stone-alpha.png"
-import POSTAL from "../assets/yellow-stone-alpha.png";
 
 
 const Contact = () => {
@@ -26,7 +24,6 @@ const Contact = () => {
               an email directly at <a href="email">hello@nelsondecarvalho.com</a> for a faster response.
             </p>
           </div>
-          {/* <img src={POSTAL} alt="" /> */}
         </div>
 
         {/* =================== Reft Side ===================== */}
